@@ -10,20 +10,19 @@
     </head>
     <body>
         <div class="page-header">
+
         <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div class="content container">
         <div class="row">
         <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
+           
         </div>
         </div>
         </div>
             {
-                    </body>
                     
-                    % for post in posts %}
+            
                 <div class="post">
                     <div class="date">
                         <p>publicado: {{ post.published_date }}</p>
@@ -34,14 +33,14 @@
                     un conjunto de componentes que te ayudan a desarrollar sitios web más fácil y rápidamente.</p2>
                     <h4><a href="https://tutorial.djangogirls.org/es/django/">"https://tutorial.djangogirls.org/es/django/"</a></h4>
                 </div>
-            {% endfor %}
+            
         </div>
     </div>
 </div>
         <div class="content container">
     <div class="row">
         <div class="col-md-8">
-            {% for post in posts %}
+            
                 <div class="post">
                     <div class="date">
                         <p1>publicado: {{ post.published_date }}</p1>
@@ -54,9 +53,10 @@ Esto es lo que hace un servidor web. El servidor web lee la carta, y envía una 
 Y Django nos ayuda a crear ese contenido.</p2>
 <h4><a href="https://tutorial.djangogirls.org/es/django/">"https://tutorial.djangogirls.org/es/django/"</a></h4>
                 </div>
-            {% endfor %}
+            
         </div>
     </div>
 </div>
-    
+{% endfor %}
+    </body>
 </html>
